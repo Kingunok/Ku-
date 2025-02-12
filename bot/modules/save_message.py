@@ -1,6 +1,6 @@
-from pyrogram.errors import UserIsBlocked
-from pyrogram.filters import regex
-from pyrogram.handlers import CallbackQueryHandler
+from hydrogram.errors import UserIsBlocked
+from hydrogram.filters import regex
+from hydrogram.handlers import CallbackQueryHandler
 
 from bot import LOGGER, bot
 from bot.helper.ext_utils.bot_utils import new_task
