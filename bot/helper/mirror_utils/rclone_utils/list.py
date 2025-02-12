@@ -7,8 +7,8 @@ from time import time
 
 from aiofiles import open as aiopen
 from aiofiles.os import path as aiopath
-from pyrogram.filters import regex, user
-from pyrogram.handlers import CallbackQueryHandler
+from hydrogram.filters import regex, user
+from hydrogram.handlers import CallbackQueryHandler
 
 from bot import LOGGER, config_dict
 from bot.helper.ext_utils.bot_utils import (cmd_exec, get_readable_file_size,
