@@ -11,8 +11,8 @@ from aiofiles.os import path as aiopath
 from aiofiles.os import remove, rename
 from aioshutil import rmtree as aiormtree
 from dotenv import load_dotenv
-from pyrogram.filters import command, create, regex
-from pyrogram.handlers import CallbackQueryHandler, MessageHandler
+from hydrogram.filters import command, create, regex
+from hydrogram.handlers import CallbackQueryHandler, MessageHandler
 
 from bot import (DATABASE_URL, GLOBAL_EXTENSION_FILTER, IS_PREMIUM_USER,
                  LOGGER, MAX_SPLIT_SIZE, Interval, aria2, aria2_options,
