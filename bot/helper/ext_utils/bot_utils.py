@@ -10,7 +10,7 @@ from time import time
 from html import escape
 from uuid import uuid4
 from psutil import virtual_memory, cpu_percent, disk_usage, virtual_memory
-from pyrogram.types import BotCommand
+from hydrogram.types import BotCommand
 from asyncio import create_subprocess_exec, create_subprocess_shell, run_coroutine_threadsafe, sleep
 from asyncio.subprocess import PIPE
 from functools import partial, wraps
