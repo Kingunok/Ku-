@@ -18,6 +18,7 @@ google-auth-oauthlib
 gunicorn
 git+https://github.com/zevtyardt/lk21.git
 httpx
+hydrogram
 lxml
 motor
 mutagen
@@ -26,7 +27,6 @@ pillow
 psutil
 pybase64
 pymongo
-pyrogram
 python-dotenv
 python-magic
 qbittorrent-api
