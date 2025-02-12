@@ -4,9 +4,9 @@ from datetime import datetime, timedelta, timezone
 from time import time
 from re import match as re_match
 
-from pyrogram.errors import (FloodWait, PeerIdInvalid, RPCError,
+from hydrogram.errors import (FloodWait, PeerIdInvalid, RPCError,
                              UserNotParticipant)
-from pyrogram.types import ChatPermissions
+from hydrogram.types import ChatPermissions
 
 from bot import (LOGGER, Interval, bot, bot_name, cached_dict, categories_dict,
                  config_dict, download_dict_lock, status_reply_dict,
