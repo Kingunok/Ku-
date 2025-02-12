@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 from io import BytesIO
 
-from pyrogram.filters import command
-from pyrogram.handlers import EditedMessageHandler, MessageHandler
+from hydrogram.filters import command
+from hydrogram.handlers import EditedMessageHandler, MessageHandler
 
 from bot import LOGGER, bot
 from bot.helper.ext_utils.bot_utils import cmd_exec, new_task
