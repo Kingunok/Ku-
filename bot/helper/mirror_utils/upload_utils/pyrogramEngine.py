@@ -14,8 +14,8 @@ from aiofiles.os import rename as aiorename
 from aioshutil import copy
 from natsort import natsorted
 from PIL import Image
-from pyrogram.errors import FloodWait, RPCError
-from pyrogram.types import InputMediaDocument, InputMediaVideo
+from hydrogram.errors import FloodWait, RPCError
+from hydrogram.types import InputMediaDocument, InputMediaVideo
 from tenacity import (RetryError, retry, retry_if_exception_type,
                       stop_after_attempt, wait_exponential)
 
@@ -30,7 +30,7 @@ from bot.helper.ext_utils.leech_utils import (get_document_type,
 from bot.helper.telegram_helper.button_build import ButtonMaker
 
 LOGGER = getLogger(__name__)
-getLogger("pyrogram").setLevel(ERROR)
+getLogger("hydrogram").setLevel(ERROR)
 
 
 class TgUploader:
