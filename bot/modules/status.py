@@ -2,8 +2,8 @@
 from time import time
 
 from psutil import cpu_percent, disk_usage, virtual_memory
-from pyrogram.filters import command, regex
-from pyrogram.handlers import CallbackQueryHandler, MessageHandler
+from hydrogram.filters import command, regex
+from hydrogram.handlers import CallbackQueryHandler, MessageHandler
 
 from bot import (Interval, bot, botStartTime, config_dict, download_dict,
                  download_dict_lock, status_reply_dict_lock)
