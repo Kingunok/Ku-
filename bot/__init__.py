@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import asyncio
 from asyncio import Lock
 from collections import OrderedDict
 from faulthandler import enable as faulthandler_enable
@@ -602,8 +603,11 @@ else:
 
 log_info("Creating client from BOT_TOKEN")
 bot = tgClient('bot', TELEGRAM_API, TELEGRAM_HASH, bot_token=BOT_TOKEN, workers=1000,
-               parse_mode=enums.ParseMode.HTML, max_concurrent_transmissions=1000).start()
-bot_loop = bot.loop
-bot_name = bot.me.username
+               parse_mode=enums.ParseMode.HTML, max_concurrent_transmissions=1000)
+await bot.start()
+bot_loop = asyncio.get_running_loop()
+bot_name = (await bot.get_me()).username
 scheduler = AsyncIOScheduler(timezone=str(
     get_localzone()), event_loop=bot_loop)
+
+await asyncio.Event().wait()
