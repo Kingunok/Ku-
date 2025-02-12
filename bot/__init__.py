@@ -21,8 +21,8 @@ from aria2p import API as ariaAPI
 from aria2p import Client as ariaClient
 from dotenv import load_dotenv
 from pymongo import MongoClient
-from pyrogram import Client as tgClient
-from pyrogram import enums
+from hydrogram import Client as tgClient
+from hydrogram import enums
 from qbittorrentapi import Client as qbClient
 from tzlocal import get_localzone
 from uvloop import install
