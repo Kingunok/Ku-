@@ -13,8 +13,8 @@ from aiofiles.os import mkdir
 from aiofiles.os import path as aiopath
 from aiofiles.os import remove as aioremove
 from PIL import Image
-from pyrogram.filters import command, create, regex
-from pyrogram.handlers import CallbackQueryHandler, MessageHandler
+from hydrogram.filters import command, create, regex
+from hydrogram.handlers import CallbackQueryHandler, MessageHandler
 
 from bot import (DATABASE_URL, IS_PREMIUM_USER, MAX_SPLIT_SIZE, bot,
                  config_dict, user_data)
