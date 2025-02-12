@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from pyrogram.filters import command
-from pyrogram.handlers import MessageHandler
+from hydrogram.filters import command
+from hydrogram.handlers import MessageHandler
 
 from bot import DATABASE_URL, bot, user_data
 from bot.helper.ext_utils.bot_utils import update_user_ldata
