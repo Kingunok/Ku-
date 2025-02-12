@@ -10,8 +10,8 @@ from time import time
 from aiohttp import ClientSession
 from apscheduler.triggers.interval import IntervalTrigger
 from feedparser import parse as feedparse
-from pyrogram.filters import command, create, regex
-from pyrogram.handlers import CallbackQueryHandler, MessageHandler
+from hydrogram.filters import command, create, regex
+from hydrogram.handlers import CallbackQueryHandler, MessageHandler
 
 from bot import DATABASE_URL, LOGGER, bot, config_dict, rss_dict, scheduler
 from bot.helper.ext_utils.bot_utils import new_thread
