@@ -1,5 +1,5 @@
-from pyrogram.filters import command
-from pyrogram.handlers import MessageHandler
+from hydrogram.filters import command
+from hydrogram.handlers import MessageHandler
 
 from bot import DATABASE_URL, bot, config_dict
 from bot.helper.ext_utils.bot_utils import is_magnet, is_url, new_task
