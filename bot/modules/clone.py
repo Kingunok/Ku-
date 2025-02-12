@@ -5,8 +5,8 @@ from random import SystemRandom
 from string import ascii_letters, digits
 
 from aiofiles.os import path as aiopath
-from pyrogram.filters import command
-from pyrogram.handlers import MessageHandler
+from hydrogram.filters import command
+from hydrogram.handlers import MessageHandler
 
 from bot import (LOGGER, bot, categories_dict, config_dict, download_dict,
                  download_dict_lock)
