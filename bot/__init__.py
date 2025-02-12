@@ -602,12 +602,33 @@ else:
     qb_client.app_set_preferences(qb_opt)
 
 log_info("Creating client from BOT_TOKEN")
-bot = tgClient('bot', TELEGRAM_API, TELEGRAM_HASH, bot_token=BOT_TOKEN, workers=1000,
-               parse_mode=enums.ParseMode.HTML, max_concurrent_transmissions=1000)
-await bot.start()
-bot_loop = asyncio.get_running_loop()
-bot_name = (await bot.get_me()).username
-scheduler = AsyncIOScheduler(timezone=str(
-    get_localzone()), event_loop=bot_loop)
 
-await asyncio.Event().wait()
+# Declare global variables
+bot: Client = None
+bot_loop: asyncio.AbstractEventLoop = None
+
+async def runbot():
+    global bot, bot_loop
+    bot = tgClient(
+        "bot",
+        api_id=TELEGRAM_API,
+        api_hash=TELEGRAM_HASH,
+        bot_token=BOT_TOKEN,
+        workers=1000,
+        parse_mode=enums.ParseMode.HTML,
+        max_concurrent_transmissions=1000
+    )
+    
+    bot_loop = asyncio.get_running_loop()  # Get the active event loop
+    
+    await bot.start()
+    bot_name = (await bot.get_me()).username
+    print(f"Bot started as @{bot_name}")
+
+    scheduler = AsyncIOScheduler(timezone=str(get_localzone()))
+    scheduler.start()  # Start the scheduler
+
+    await asyncio.Event().wait()  # Keep the bot running
+
+if __name__ == "__main__":
+    asyncio.run(runbot())  # Run the bot inside the event loop
