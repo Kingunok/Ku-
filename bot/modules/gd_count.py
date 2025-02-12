@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 from time import time
 
-from pyrogram.filters import command
-from pyrogram.handlers import MessageHandler
+from hydrogram.filters import command
+from hydrogram.handlers import MessageHandler
 
 from bot import bot
 from bot.helper.ext_utils.bot_utils import (get_readable_file_size,
