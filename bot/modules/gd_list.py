@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 from time import time
 
-from pyrogram.filters import command, regex
-from pyrogram.handlers import CallbackQueryHandler, MessageHandler
+from hydrogram.filters import command, regex
+from hydrogram.handlers import CallbackQueryHandler, MessageHandler
 
 from bot import LOGGER, bot
 from bot.helper.ext_utils.bot_utils import (checking_access, get_readable_time,
