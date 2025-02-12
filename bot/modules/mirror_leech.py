@@ -4,8 +4,8 @@ from base64 import b64encode
 from re import match as re_match
 from asyncio import sleep
 from aiofiles.os import path as aiopath
-from pyrogram.filters import command
-from pyrogram.handlers import MessageHandler
+from hydrogram.filters import command
+from hydrogram.handlers import MessageHandler
 
 from bot import (IS_PREMIUM_USER, LOGGER, bot, categories_dict,
                  config_dict)
