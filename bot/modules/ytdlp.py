@@ -5,8 +5,8 @@ from time import time
 
 from aiofiles.os import path as aiopath
 from aiohttp import ClientSession
-from pyrogram.filters import command, regex, user
-from pyrogram.handlers import CallbackQueryHandler, MessageHandler
+from hydrogram.filters import command, regex, user
+from hydrogram.handlers import CallbackQueryHandler, MessageHandler
 from yt_dlp import YoutubeDL
 
 from bot import (DOWNLOAD_DIR, IS_PREMIUM_USER, LOGGER, bot, categories_dict,
