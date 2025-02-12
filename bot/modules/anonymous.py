@@ -1,5 +1,5 @@
-from pyrogram.filters import regex
-from pyrogram.handlers import CallbackQueryHandler
+from hydrogram.filters import regex
+from hydrogram.handlers import CallbackQueryHandler
 
 from bot import LOGGER, bot, cached_dict
 from bot.helper.telegram_helper.message_utils import (deleteMessage,
