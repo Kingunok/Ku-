@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from pyrogram.filters import command
-from pyrogram.handlers import MessageHandler
+from hydrogram.filters import command
+from hydrogram.handlers import MessageHandler
 
 from bot import LOGGER, bot
 from bot.helper.ext_utils.bot_utils import (is_gdrive_link, new_task,
