@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 from aiofiles.os import path as aiopath
 from aiofiles.os import remove as aioremove
-from pyrogram.filters import command, regex
-from pyrogram.handlers import CallbackQueryHandler, MessageHandler
+from hydrogram.filters import command, regex
+from hydrogram.handlers import CallbackQueryHandler, MessageHandler
 
 from bot import LOGGER, aria2, bot, download_dict, download_dict_lock
 from bot.helper.ext_utils.bot_utils import (MirrorStatus, bt_selection_buttons,
