@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 from asyncio import sleep
 
-from pyrogram.filters import command, regex
-from pyrogram.handlers import CallbackQueryHandler, MessageHandler
+from hydrogram.filters import command, regex
+from hydrogram.handlers import CallbackQueryHandler, MessageHandler
 
 from bot import bot, bot_loop, download_dict, download_dict_lock
 from bot.helper.ext_utils.bot_utils import (MirrorStatus, getAllDownload,
